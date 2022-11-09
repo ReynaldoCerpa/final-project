@@ -11,7 +11,9 @@ const App = () => {
 	<Router>
 	  <Navbar />
 	  <Routes>
-		<Route path='/' exact element={<Home/>} />
+		<Route index path='/' exact element={<Home/>} />
+
+		<Route path="*" element={<Home to="/" replace />} />
 	  </Routes>
 	</Router>
   )
