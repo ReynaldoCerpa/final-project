@@ -6,7 +6,7 @@ const Navbar= () =>{
   return (
   <div className='navbar'>
 	<div className="navbar-items-container">
-      <Link to="/">Home</Link>
+      <Link to="/">Play!</Link>
       <Link to="/leaderboard">Leaderboard</Link>
 	</div>
   </div>

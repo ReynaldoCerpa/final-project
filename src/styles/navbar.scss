@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../clear-sans.ttf") format("truetype");
+}
 .navbar {
   height: 4rem;
   width: 100vw;
@@ -19,8 +23,10 @@
 
 .navbar-items-container a {
   text-decoration: none;
-  background-color: #A6D1E6;
   padding: 15px;
+  color: #fff;
   margin-right: 0.7rem;
   border-radius: 10px;
+  font-family: "Clear Sans", sans-serif;
+  font-weight: 800;
 }
