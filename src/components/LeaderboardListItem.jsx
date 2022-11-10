@@ -4,7 +4,7 @@ export const LeaderboardListItem = ({name, points, position}) => {
   return (
 	<div className="leaderboardListItem">
 	  <p>{name}</p>
-	  <p>{points}</p>
+	  <p>{points} pts.</p>
 	</div>
   )
 }
