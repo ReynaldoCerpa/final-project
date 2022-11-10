@@ -8,11 +8,10 @@ import "./styles.scss";
 
 const App = () => {
   return (
-	<Router>
+	<Router className="app-main-container">
 	  <Navbar />
 	  <Routes>
 		<Route index path='/' exact element={<Home/>} />
-
 		<Route path="*" element={<Home to="/" replace />} />
 	  </Routes>
 	</Router>
