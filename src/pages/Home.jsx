@@ -4,6 +4,7 @@ function Home() {
 
 	<div className='boardContainer'>
 	  <BoardView />
+	  <p className='credits-p'>Game by <a href="https://www.github.com/monicatvera">monicatvera</a></p>
 	</div>
   )
 }
