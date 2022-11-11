@@ -179,6 +179,9 @@ class Board {
         }
       }
     }
+	if (canMove == false) {
+	  console.log(this.score)
+	}
     return !canMove;
   }
 }
