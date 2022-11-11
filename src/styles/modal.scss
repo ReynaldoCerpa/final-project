@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../clear-sans.ttf") format("truetype");
+}
+
+.modal-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-main-container h2{
+  font-family: "Clear Sans", sans-serif;
+}
+.modal-main-container button{
+  margin: 1rem 0;
+  width: 9rem;
+}
