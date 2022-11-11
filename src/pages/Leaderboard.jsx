@@ -7,6 +7,14 @@ function Leaderboard () {
 	{name: "Player 2", points: 4000},
 	{name: "Player 3", points: 3000},
 	{name: "Player 4", points: 2000},
+	{name: "Player 5", points: 1000},
+	{name: "Player 6", points: 900},
+	{name: "Player 7", points: 800},
+	{name: "Player 8", points: 700},
+	{name: "Player 9", points: 600},
+	{name: "Player 10", points: 500},
+	{name: "Player 11", points: 400},
+	{name: "Player 12", points: 300},
   ]
   return (
 	<div className="leaderboard-main-container">
