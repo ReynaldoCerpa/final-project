@@ -26,6 +26,7 @@ export default function RegisterModal({opened, setOpened}) {
 			onChange={(e)=>setUsername(e.target.value)}
 		  />
 		  <Button
+			  className="button"
 			  onClick={()=>{
 				setUsernameLS(username)
 				setOpened(false)

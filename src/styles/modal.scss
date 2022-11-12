@@ -11,9 +11,27 @@
 }
 
 .modal-main-container h2{
+  color: #fff;
+  font-size: 3rem;
+  margin: 1rem 0 3rem 0;
   font-family: "Clear Sans", sans-serif;
+  font-weight: 900;
 }
 .modal-main-container button{
-  margin: 1rem 0;
+  margin: 1.5rem 0;
+  background-color: #2c1b4d;
   width: 9rem;
+}
+
+.mantine-Input-input {
+  font-size: 1.5rem;
+  outline: 3px solid #2c1b4d;
+  height: 3rem;
+  width: 19rem;
+}
+
+.mantine-Modal-modal {
+  background-color: #57407c;
+  border-radius: 10px; 
+  max-width: 30rem;
 }
