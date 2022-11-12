@@ -9,6 +9,7 @@ export default function RegisterModal({opened, setOpened}) {
   // Set username Local Storage
   function setUsernameLS(username) {
 	localStorage.setItem("username",username)
+	setOpened(false)
   }
 
   return (
@@ -24,12 +25,19 @@ export default function RegisterModal({opened, setOpened}) {
 		  <Input
 			placeholder="Username"
 			onChange={(e)=>setUsername(e.target.value)}
+			onKeyDown={
+			  (e)=>{
+				console.log(e)
+				if(e.keyCode === 13){
+					setUsernameLS(username)
+				}
+			  }
+			}
 		  />
 		  <Button
 			  className="button"
 			  onClick={()=>{
 				setUsernameLS(username)
-				setOpened(false)
 			  }}>
 			Save
 		  </Button>
