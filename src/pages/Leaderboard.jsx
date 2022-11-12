@@ -3,7 +3,7 @@ import "../styles/leaderboard.scss"
 
 function Leaderboard () {
   const itemList = [
-	{name: "Player 1", points: 5000},
+	{name: "Memo", points: 5000},
 	{name: "Player 2", points: 4000},
 	{name: "Player 3", points: 3000},
 	{name: "Player 4", points: 2000},
