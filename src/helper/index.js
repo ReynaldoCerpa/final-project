@@ -1,3 +1,4 @@
+
 var rotateLeft = function (matrix) {
   var rows = matrix.length;
   var columns = matrix[0].length;
@@ -157,6 +158,8 @@ class Board {
   hasWon() {
     return this.won;
   }
+
+
   hasLost() {
     var canMove = false;
     for (var row = 0; row < this.size; ++row) {
@@ -179,8 +182,7 @@ class Board {
         }
       }
     }
-	if (canMove == false) {
-	  console.log(this.score)
+	if(canMove == false){
 	}
     return !canMove;
   }

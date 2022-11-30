@@ -13,7 +13,7 @@
 .modal-main-container h2{
   color: #fff;
   font-size: 3rem;
-  margin: 1rem 0 3rem 0;
+  margin: 1rem 0 .5rem 0;
   font-family: "Clear Sans", sans-serif;
   font-weight: 900;
 }
@@ -35,4 +35,9 @@
   background-color: #57407c;
   border-radius: 10px; 
   max-width: 30rem;
+}
+
+.modal-main-container h3 {
+  color: #fff;
+  font-family: "Clear Sans", sans-serif;
 }
