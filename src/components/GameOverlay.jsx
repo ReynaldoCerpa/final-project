@@ -9,6 +9,7 @@ const GameOverlay = ({ onRestart, board }) => {
 
   if (board.hasWon()) {
     return <div className="tile2048"></div>;
+	handleUpdateLeaderboard(localStorage.getItem("username"), board.score)
   } else if (board.hasLost()) {
 	handleUpdateLeaderboard(localStorage.getItem("username"), board.score)
 
