@@ -20,10 +20,13 @@ export const getLeaderboard = async () => {
 }
 
 export const updateLeaderboard = async (username, points) => {
-  
-  const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/update`,{
-	  "username": username,
-	  "points": points
-  })
-  return response;
+  const leaderboard = await getLeaderboard()
+  if (username === leaderboard.username && points > leaderboard.points) {
+	const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/update`,{
+		"username": username,
+		"points": points
+	})
+	return response;
+  }
+  return
 }
