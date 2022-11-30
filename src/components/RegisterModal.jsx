@@ -1,4 +1,5 @@
 import { Modal, Input, Button } from "@mantine/core"
+import { register } from "../api/register.js"
 import React, { useState } from 'react';
 import "../styles/modal.scss"
 
@@ -10,6 +11,11 @@ export default function RegisterModal({opened, setOpened}) {
   function setUsernameLS(username) {
 	localStorage.setItem("username",username)
 	setOpened(false)
+  }
+
+  async function handleRegister(username) {
+	let checkUsername = await register(username)
+	console.log("Checkusername ",checkUsername)
   }
 
   return (
@@ -27,9 +33,9 @@ export default function RegisterModal({opened, setOpened}) {
 			onChange={(e)=>setUsername(e.target.value)}
 			onKeyDown={
 			  (e)=>{
-				console.log(e)
 				if(e.keyCode === 13){
-					setUsernameLS(username)
+					handleRegister(username)
+					//setUsernameLS(username)
 				}
 			  }
 			}
@@ -37,7 +43,8 @@ export default function RegisterModal({opened, setOpened}) {
 		  <Button
 			  className="button"
 			  onClick={()=>{
-				setUsernameLS(username)
+				handleRegister(username)
+				//setUsernameLS(username)
 			  }}>
 			Save
 		  </Button>
